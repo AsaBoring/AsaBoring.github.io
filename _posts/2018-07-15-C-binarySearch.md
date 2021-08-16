@@ -8,7 +8,7 @@ tags:
     - C++
 ---
 
-> * 递归实现
+#### 递归实现
 ```
 int View::binarySearchRecursively(int arr[] , int low , int high , int nKey)
 {
@@ -29,7 +29,8 @@ int View::binarySearchRecursively(int arr[] , int low , int high , int nKey)
 }
 
 ```
-> * 循环实现
+
+#### 循环实现
 ```
 int View::binarySearch(int arr[], int low, int high, int nKey)
 {

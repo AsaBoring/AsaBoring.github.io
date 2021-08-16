@@ -10,8 +10,7 @@ tags:
     - CMake
 ---
 
-在开发环境的选择上，很多开发者都觉得Linux的自由度要比Windows强很多，在此记录一下`OpenCv`在ubuntu下是如何编译并使用的。
-
+###     在开发环境的选择上，很多开发者都觉得Linux的自由度要比Windows强很多，在此记录一下`OpenCv`在ubuntu下是如何编译并使用的。
 * [先放个我编译好的OpenCV的lib](https://github.com/AsaBoring/OpenC-4.3_release)
 
 ### 工具准备
@@ -31,27 +30,27 @@ tags:
 ### 编译过程
 
 * 将下载好的`OpenCv`源码解压
-![解压opencv](/img/2019-05-15-build-opencv-contrib/opencv.jpg)
+![解压opencv](/img/2019-04-15-build-opencv/opencv.jpg)
 * 在`src`文件夹下新建一个自己的`build文件夹`用来`执行cmake`
-![在Src路径下新建build文件夹](/img/2019-05-15-build-opencv-contrib/mkdir_build.png)
-![通过命令行进入建好的文件夹](/img/2019-05-15-build-opencv-contrib/insert_folder.png)
+![在Src路径下新建build文件夹](/img/2019-04-15-build-opencv/mkdir_build.png)
+![通过命令行进入建好的文件夹](/img/2019-04-15-build-opencv/insert_folder.png)
 * 执行命令
 `cmake -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D WITH_V4L=ON -D INSTALL_C_EXAMPLES=ON -D BUILD_EXAMPLES=ON -D WITH_OPENGL=ON -D WITH_EIGEN=OFF -D BUILD_opencv_world=ON -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local/OpenCV/Release ..`
-![进行make file的生成](/img/2019-05-15-build-opencv-contrib/make_file.png)
-![make file生成成功](/img/2019-05-15-build-opencv-contrib/make_success.png)
+![进行make file的生成](/img/2019-04-15-build-opencv/make_file.png)
+![make file生成成功](/img/2019-04-15-build-opencv/make_success.png)
 * Note:
 1 `CMAKE_INSTALL_PREFIX`后面的参数`/usr/local/OpenCV/Release`是库文件最终install完毕后的位置，可自行设定
 2 `BUILD_opencv_world=ON`是将所有的库文件编译为一个文件
 3 `CMAKE_BUILD_TYPE`控制编译为`Release`版本还是`Debug`版本
 * 执行命令
 `make -j2`
-![执行make](/img/2019-05-15-build-opencv-contrib/execute_make.png)
-![make完毕](/img/2019-05-15-build-opencv-contrib/make_success.png)
+![执行make](/img/2019-04-15-build-opencv/execute_make.png)
+![make完毕](/img/2019-04-15-build-opencv/make_success.png)
 * 执行命令
 `sudo make install`
-![make install](/img/2019-05-15-build-opencv-contrib/make_install.png)
+![make install](/img/2019-04-15-build-opencv/make_install.png)
 * 到路径`/usr/local/OpenCV/Release/lib`下可查看编译结果
-![lib位置](/img/2019-05-15-build-opencv-contrib/lib_location.png)
+![lib位置](/img/2019-04-15-build-opencv/lib_location.png)
 
 ### Qt Demo
 

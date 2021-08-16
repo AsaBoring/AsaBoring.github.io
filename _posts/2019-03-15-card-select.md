@@ -9,21 +9,25 @@ tags:
     - OpenCv
 ---
 
-> * 最近这段时间需要进行图片方面的处理，众所周知，`OpenCv`是开源圈里几乎最优秀的计算机视觉处理库，本文记录在研究过程中所做的一个车牌定位的Demo。
-本文所提供的Demo仅限于车牌定位，定位出的车牌进行识别的话可以使用`TeseRact`进行，本文不做更多描述。
+####     最近这段时间需要进行图片方面的处理，众所周知，`OpenCv`是开源圈里几乎最优秀的计算机视觉处理库，本文记录在研究过程中所做的一个车牌定位的Demo。
+####     本文所提供的Demo仅限于车牌定位，定位出的车牌进行识别的话可以使用`TeseRact`进行，本文不做更多描述。
+
 ### 工具准备
 #### Qt
-> * Qt的安装网上有大量的教程，或许之后本人会出一个相关的文章，不过在这里就只放一个下载的Link好了
+* Qt的安装网上有大量的教程，或许之后本人会出一个相关的文章，不过在这里就只放一个下载的Link好了
 http://download.qt.io/archive/qt/
+
 ####  OpenCv库文件
-> *  `OpenCv`在Windows下配合Qt的使用需要对源码进行重新编译，我所使用的是最新的4.3版本,放个下载连接以及安装编译教程
-> *  [`OpenCv`下载](https://www.opencv.org/releases.html)
-> *  [`OpenCv`安装视频教程windows](https://www.bilibili.com/video/BV1Za4y1v7ra/?spm_id_from=333.788.videocard.0)
-> * 如果各位觉得上述操作太麻烦我这里提供一个我自己编译出来的[OpenCv4.3](https://github.com/AsaBoring/OpenCV_4.3_release_lib/blob/master/OpenCV4.3_release_windows_without_contrib.zip
+*  `OpenCv`在Windows下配合Qt的使用需要对源码进行重新编译，我所使用的是最新的4.3版本,放个下载连接以及安装编译教程
+*  [`OpenCv`下载](https://www.opencv.org/releases.html)
+*  [`OpenCv`安装视频教程windows](https://www.bilibili.com/video/BV1Za4y1v7ra/?spm_id_from=333.788.videocard.0)
+* 如果各位觉得上述操作太麻烦我这里提供一个我自己编译出来的[OpenCv4.3](https://github.com/AsaBoring/OpenCV_4.3_release_lib/blob/master/OpenCV4.3_release_windows_without_contrib.zip
 )的lib
+
 ### Demo
 1.新建一个Qt的项目
 2.Pro文件中需添加`OpenCv`库的`头文件路径`以及`lib路径`[^note1]
+
 ```
 INCLUDEPATH += C:\Users\houxia2x\Desktop\Asa\opencv\opencv\asa_build\install\include\opencv2\
                C:\Users\houxia2x\Desktop\Asa\opencv\opencv\asa_build\install\include
@@ -31,6 +35,7 @@ INCLUDEPATH += C:\Users\houxia2x\Desktop\Asa\opencv\opencv\asa_build\install\inc
 LIBS += -LC:\Users\houxia2x\Desktop\Asa\opencv\opencv\asa_build\install\x64\mingw\bin\
         -llibopencv_world430
 ```
+
 3.头文件需包含OpenCv的统筹文件"opencv2/opencv.hpp"
 ```
 #include "opencv2/opencv.hpp"
