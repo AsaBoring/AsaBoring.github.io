@@ -12,11 +12,11 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username:     君九城
+weibo_username:     u/5540244327/home
 #zhihu_username:     huxpro
-github_username:    AsaGlory
-twitter_username:   AsaGlory
-facebook_username:  AsaGlory
+github_username:    AsaBoring
+twitter_username:   AsaGlory1
+facebook_username:  asa.hou.96
 #linkedin_username:  firstname-lastname-idxxxx
 
 # Build settings
