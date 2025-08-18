@@ -3,7 +3,7 @@ layout: page
 title: 主流的几种地理坐标系详解
 date: 2024-08-21 14:30:00.000000000 +08:00
 author:     "GeoExpert"
-header-img-img: "img/post-bg-alibaba.jpg"
+header-img: "img/post-bg-alibaba.jpg"
 tags:
     - 地理信息
     - 坐标系
