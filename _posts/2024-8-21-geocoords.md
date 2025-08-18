@@ -3,7 +3,7 @@ layout: page
 title: 主流主流最流行的几种地理坐标系详解
 date: 2024-08-21 14:30:00.000000000 +08:00
 author:     "GeoExpert"
-header-img-img: "img/post-bg-coordinate.jpg"
+header-img-img: "img/post-bg-alibaba.jpg"
 tags:
     - 地理信息
     - 坐标系

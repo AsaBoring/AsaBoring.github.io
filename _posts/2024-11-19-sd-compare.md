@@ -3,7 +3,7 @@ layout: page
 title: Stable Diffusion与主流AI图片生成模型的全方位对比
 date: 2024-11-19 10:15:00.000000000 +08:00
 author:     "AI Researcher"
-header-img: "img/post-bg-ai-comparison.jpg"
+header-img: "img/post-bg-ai-alibaba.jpg"
 tags:
     - AI绘画
     - 模型对比
