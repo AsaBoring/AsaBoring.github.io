@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Oracle Spatial(空间运算)
-date: 2024-08-.2 16:54:24.000000000 +09:00
+date: 2024-08-2 16:54:24.000000000 +09:00
 author:     "Asa"
 header-img: "img/post-bg-alibaba.jpg"
 tags:
