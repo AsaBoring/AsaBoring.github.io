@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 主流主流最流行的几种地理坐标系详解
+title: 主流的几种地理坐标系详解
 date: 2024-08-21 14:30:00.000000000 +08:00
 author:     "GeoExpert"
 header-img-img: "img/post-bg-alibaba.jpg"
@@ -143,19 +143,24 @@ UTM坐标以米为单位，每个投影带内：
 from osgeo import osr
 
 # 定义源坐标系（WGS84）
+```
 source = osr.SpatialReference()
 source.ImportFromEPSG(4326)  # EPSG:4326 = WGS84
-
+```
 # 定义目标坐标系（UTM 50N）
+```
 target = osr.SpatialReference()
 target.ImportFromEPSG(32650)  # EPSG:32650 = UTM 50N
-
+```
 # 创建转换对象
+```
 transform = osr.CoordinateTransformation(source, target)
-
+```
 # 转换坐标（经度，纬度）
+```
 x, y, z = transform.TransformPoint(116.4, 39.9)
 print(f"UTM坐标：X={x:.2f}, Y={y:.2f}")
+```
 ## 坐标系选择指南
 
 ### 选择原则
